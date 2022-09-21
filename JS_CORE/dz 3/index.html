@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <style>
+            button{
+                border-radius: 10px;
+                border: 1px solid green;
+            }
+            a{
+                color: brown;
+                text-decoration: none;
+            }
+            .btn {
+                border-radius: 10px;
+                border: 1px solid red;
+                margin-top: 5px;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="btnN11()" class="btn">Колір кнопок</button>
+        <button onclick="btnN1()" class="btn">Колір сторінки</button>
+        <button onclick="btnN2()" class="btn">Вид шрифта сторінки</button>
+        <button onclick="btnN3()" class="btn">Положення заголовка</button>
+        <button onclick="btnN4()" class="btn">Колір параграфа зсилок</button>
+        <button onclick="btnN5()" class="btn">Колір зсилок</button>
+        <button onclick="btnN6()" class="btn">
+            Колір тексту "Мої улюблені сайти"
+        </button>
+        <button onclick="btnN7()" class="btn">Розмір шрифта зсилок</button>
+        <button onclick="btnN8()" class="btn">Тип шрифта зсилок</button>
+        <button onclick="btnN9()" class="btn">Cтиль списку завданнь</button>
+        <button onclick="btnN10()" class="btn">Мої сайти</button>
+        <h1>Моя сторінка</h1>
+        <p>
+            мої улюблені сайти:
+            <button>
+                <a href="http://" class="a1">Сайт №1</a>
+            </button>
+            <button>
+                <a href="http://" class="a2">Сайт №2</a>
+            </button>
+            <button>
+                <a href="http://" class="a3">Сайт №3</a>
+            </button>
+        </p>
+        <div>
+            За допомогою JavaScript запропонувати користувачу вибрати стиль для
+            сторінки. А саме:
+            <ul>
+                <li>Фон для сторінки</li>
+                <li>Тип шпифта на сторінці</li>
+                <li>Вирівнювання для заголовка h1</li>
+                <li>Фон для параграфа зі зсилками</li>
+                <li>
+                    Колір тексту у параграфі зі зсилками і для самих зсилок. При
+                    чому колір тексту для зсилок призначити у циклі
+                </li>
+                <li>Колір, розмір, товщину тексту у елементі div</li>
+                <li>тип маркера для маркованого списку на сторінці</li>
+            </ul>
+            Таким чином слід запропонувати користувачу ввести десять налаштувань
+            сторінки і застосувати їх.<br />
+            ДОДАТОК ДО ЗАВДАННЯ: замість зсилок на конкретні сайти, вивести у
+            панелі навігації зсилки на три сайти, які вкаже користувач. <br />
+            Наприклад користувач у віконце prompt() ввів адресу football24.ua -
+            в такому разі треба створити зсилку, яка вела б на сайт football24,
+            а текстом цієї зсилки (тим, по чому можна клікнути) буде також
+            football24.ua
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
