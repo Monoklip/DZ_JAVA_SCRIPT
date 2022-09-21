@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="containerSingUp">
+        <div class="block text">
+            <h2>Please sign up</h2>
+        </div>
+        <form action="" name="form" id="form" >
+            <div class="block">
+                <input required class="firstNameInput" type="text" name="firstname" placeholder="FirstName">
+            </div>
+            <div class="block">
+                <input required class="lastNameInput" type="text" name="lastname" placeholder="LastName">
+            </div>
+            <div class="block email">
+                <input required class="emailInput" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="error"></div>
+            <div class="block password">
+                <input required class="passwordInput" type="password" name="password" placeholder="Password">
+            </div>
+        </form>
+        <button type="submit" class="btnSingUp">Sign Up</button><br>
+        <button class="btnSingIn">Sign In now</button>
+    </div>
+
+    <div class="containerSingIn">
+        <div class="block text">
+            <h2>Please sign in</h2>
+        </div>
+        <form action="">
+            <div class="block">
+                <input required class="emailInput2" type="email" placeholder="Email">
+            </div>
+            <div class="block2">
+                <input required class="passwordInput2" type="password" placeholder="Password">
+            </div>
+            <div class="error2"></div>
+        </form>
+        <button type="submit" class="btnSingIn2">Sign In</button><br>
+        <button class="btnSingUp2">Sign Up now</button>
+    </div>
+
+    <div class="containerUser">
+        <div class="userImage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJqngNJ42uWE0Zy6S6rHTuW8pn6p-cuogyQ&usqp=CAU" alt="">
+        </div>
+        <p class="nameUserMonitor"></p>
+        <p class="emailUserMonitor"></p>
+        <p class="jobUserMonitor">Designer & Web Developing</p>
+        <button class="btnUserClose">Sign Up</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
