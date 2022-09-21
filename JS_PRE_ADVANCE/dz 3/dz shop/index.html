@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="block">
+            <div class="box">
+                <h3>Баланс</h3>
+                <div class="balance ekran"></div>
+            </div>
+            <div class="box">
+                <h3>Пиво</h3>
+                <div class="beer ekran"></div>
+            </div>
+            <div class="box">
+                <h3>Вино</h3>
+                <div class="wine ekran"></div>
+            </div>
+            <div class="box">
+                <h3>Пепсі</h3>
+                <div class="pepsi ekran"></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="box">
+                <h3>Кількість</h3>
+                <input type="text" class="inputAll">
+            </div>
+            <div class="box-radio">
+                <div class="input-radio">
+                    <input type="radio" name="radio" id="beer"> Пиво
+                </div>
+                <div class="input-radio">
+                    <input type="radio" name="radio" id="wine"> Вино
+                </div>
+                <div class="input-radio">
+                    <input type="radio" name="radio" id="pepsi"> Пепсі<br>
+                </div>
+            </div>
+            <button class="btn-add">Додати</button>
+            <div class="monitorBuy"></div>
+            <button class="btn-buy">Купити</button>
+        </div>
+        <div class="block">
+            <div class="monitor"></div>
+        </div>
+    </div>
+
+    <div class="alert">
+        <div class="alert-up"></div>
+        <hr>
+        <div class="alert-text"></div>
+        <hr>
+        <div class="alert-button">
+            <button class="btn-close-alert">Close</button>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
