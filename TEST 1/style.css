@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    width: 100%;
+    margin: 50px auto;
+}
+.up{
+    width: 800px;
+    min-height: 300px;
+    margin: 0 auto;
+    background-color: rgba(216, 215, 214, 0.815);
+    border-radius: 10px;
+}
+.text{
+    width: 800px;
+    min-height: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.seting{
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(216, 215, 214, 0.815);
+    border-radius: 10px;
+
+}
+.button{
+    width: 130px;
+    margin: 10px     auto;
+    
+}
+.seting-text{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.seting-edit{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.seting-style{
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+.seting-style-left{
+    width: 500px;
+}
+h4{
+    margin: 10px;
+}
+p{
+    margin-top: 10px;
+}
+.seting-style-right{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backcolor{
+    width: 180px;
+    height: 180px;
+    background-color: grey;
+    display: none;
+}
+.back-color{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.textcolor{
+    width: 180px;
+    height: 180px;
+    background-color: grey;
+    display: none;
+}
+.text-color{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.text-add{
+    box-sizing: border-box;
+    padding: 20px;
+    display: none;
+}
+.create-table, .create-list{
+    background-color:green;
+    color:white;
+    width:100px;
+    height:35px;
+    margin: 20px;
+}
+.table{
+    padding-left: 20px;
+    font-size: 18px;
+    display: none;
+}
+.countTR, .countTD, .widthTD, .heightTD, .widthBorder, .countLi, .typeMarks{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-top: 5px;
+}
+.left{
+    width: 150px;
+}
+.TR, .TD, .wTD, .hTD, .Li, #Marks{
+    width: 600px;
+    height: 30px;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+#bord{
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+}
+.list{
+    padding-left: 20px;
+    font-size: 18px;
+    display: none;
+}
+li{
+    margin-left: 30px;
+}

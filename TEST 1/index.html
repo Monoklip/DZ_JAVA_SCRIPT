@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="section">
+            <div class="up">
+                <div class="text"></div>
+                <div class="text-add">
+                    <h1 style="margin-bottom:10px;">Choose what you want</h1>
+                    <input type="radio" name="name" class="tableRadio"><span style="font-size:18px;margin-left:10px;">table</span>
+                    <input type="radio" name="name" class="listRadio" style="margin-left:20px;"><span style="font-size:18px;margin-left:10px;">list</span>
+                </div>
+                <div class="table">
+                    <div class="countTR">
+                       <div class="left">Count TR:</div>
+                       <div class="right">
+                            <input type="text" class="TR" placeholder="  Count TR:">
+                       </div>
+                    </div>
+                    <div class="countTD">
+                        <div class="left">Count TD:</div>
+                        <div class="right">
+                            <input type="text" class="TD" placeholder="  Count TD:">
+                        </div>
+                    </div>
+                    <div class="countText">
+                        <b><h2 style="margin-top:20px;">Add style to your table:</h2></b>
+                    </div>
+                    <div class="widthTD">
+                        <div class="left">Width of TD:</div>
+                        <div class="right">
+                            <input type="text" class="wTD" placeholder=" Width of TD:">
+                        </div>
+                    </div>
+                    <div class="heightTD">
+                        <div class="left">Height of TD:</div>
+                        <div class="right">
+                            <input type="text" class="hTD" placeholder=" Height of TD:">
+                        </div>
+                    </div>
+                    <div class="widthBorder">
+                        <div class="left">Width of border:</div>
+                        <div class="right">
+                            <input type="text" id="bord" class="brd" placeholder=" Width:">Type of border:
+                            <select name="" id="bord" class="brdType" style="margin-left:15px;">
+                                <option value="solid">solid</option>
+                                <option value="double ">double </option>
+                                <option value="dotted ">dotted </option>
+                                <option value="dashed ">dashed </option>
+                            </select>Color of border:
+                            <select name="" id="bord" class="brdColor" style="margin-left:15px;">
+                                <option value="black">black</option>
+                                <option value="red">red</option>
+                                <option value="blue">blue</option>
+                                <option value="green">green</option>
+                            </select>
+                        </div>   
+                    </div>
+                    <div class="table-button">
+                        <button class="create-table">Create table</button>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="countLi">
+                        <div class="left">Count Li:</div>
+                        <div class="right">
+                            <input type="text" class="Li" placeholder=" Cuont Li:">
+                        </div>
+                    </div>
+                    <div class="typeMarks">
+                        <div class="left">Type of marks:</div>
+                        <div class="right">
+                           <select name="" id="Marks">
+                                <option value="circle">circle</option>
+                                <option value="disc">disc</option>
+                                <option value="square">square</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="table-button">
+                        <button class="create-list">Create list</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="edit" style="background-color: rgb(201, 201, 52)">Edit</button>
+                <button class="style" style="background-color: rgb(51, 137, 235); color: white">Style</button>
+            </div>
+            <div class="seting">
+                <div class="seting-edit">
+                    <div class="seting-text">
+<textarea name="" id="textarea" cols="90" rows="11" style="padding: 0 20px; box-sizing: border-box">
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+</textarea>
+                    </div>
+                    <button class="add" style="background-color: red; color: white">Add</button>
+                    <button class="save" style="background-color: green; color: white">Save</button>
+                </div>
+                <div class="seting-style">
+                    <div class="seting-style-left">
+                        <div class="font-size">
+                            <h4>Font Size</h4>
+                            <input type="radio" class="px12" name="contact" style="margin-left: 10px"/>12px
+                            <input type="radio" class="px14" name="contact" style="margin-left: 30px"/>14px
+                            <input type="radio" class="px16" name="contact" style="margin-left: 30px"/>16px
+                            <input type="radio" class="px18" name="contact" style="margin-left: 30px"/>18px
+                            <input type="radio" class="px20" name="contact" style="margin-left: 30px"/>20px
+                        </div>
+                        <div class="font-family">
+                            <h4>Font Family</h4>
+                            <select name="choose-option" id="choose" style="width: 300px;height: 30px;font-size: 14px;">
+                                <option value="Choose option">Choose option</option>
+                                <option value="cursive">cursive</option>
+                                <option value="fantasy">fantasy</option>
+                                <option value="monospace">monospace</option>
+                                <option value="sens-serif">sens-serif</option>
+                            </select>
+                        </div>
+                        <div class="colors">
+                            <h4>Colors</h4>
+                            <button class="colorOfText" style="width: 180px;background-color:grey;color: white;">Color of text</button>
+                            <button class="backgroundColor"style="width: 180px;background-color:grey;color: white;">Background color</button>
+                        </div>
+                        <div class="style">
+                            <h4>Style</h4>
+                            <input type="checkbox" id="bold" style="margin-left: 10px"/>
+                            <span style="font-size: 18px; margin-left: 10px">Bold text</span>
+                            <input type="checkbox" id="cursive" style="margin-left: 30px" />
+                            <span style="font-size: 18px; margin-left: 10px">Cursive text</span>
+                        </div>
+                    </div>
+                    <div class="seting-style-right">        
+                        <div class="backcolor">
+                            <div class="back-color" id="red" style="background-color:red;"></div>
+                            <div class="back-color" id="blue" style="background-color:blue;"></div>
+                            <div class="back-color" id="green" style="background-color:green;"></div>
+                            <div class="back-color" id="yellow" style="background-color:yellow;"></div>
+                            <div class="back-color" id="brown" style="background-color:brown;"></div>
+                            <div class="back-color" id="pink" style="background-color:pink;"></div>
+                            <div class="back-color" id="grey" style="background-color:grey;"></div>
+                            <div class="back-color" id="white" style="background-color:white;"></div>
+                            <div class="back-color" id="purple" style="background-color:purple;"></div>
+                        </div>
+                        <div class="textcolor">
+                            <div class="text-color" id="red1" style="background-color:red;"></div>
+                            <div class="text-color" id="blue1" style="background-color:blue;"></div>
+                            <div class="text-color" id="green1" style="background-color:green;"></div>
+                            <div class="text-color" id="yellow1" style="background-color:yellow;"></div>
+                            <div class="text-color" id="brown1" style="background-color:brown;"></div>
+                            <div class="text-color" id="pink1" style="background-color:pink;"></div>
+                            <div class="text-color" id="grey1" style="background-color:grey;"></div>
+                            <div class="text-color" id="white1" style="background-color:white;"></div>
+                            <div class="text-color" id="purple1" style="background-color:purple;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>
