@@ -1,0 +1,81 @@
+
+header {
+    background-image: url('../../images/Bitmap.png');
+    height: 100%;
+    background-color: rgba(0,0,0,1.8);
+    width: 1440px;
+    margin: 0 auto;
+    .header-top {
+        padding: 40px 309px 147px 246px;
+        display: flex;
+        justify-content: space-between;
+        .logotip {
+            p {
+                font-family: "Montserrat-700";
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+        }
+        .log {
+            display: flex;
+            .log-in {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    border: none;
+                    background: none;
+                    cursor: pointer;;
+                    font-family: "Montserrat-400";
+                    font-size: 14px;
+                    color: #FFFFFF;
+                }
+                button:hover {
+                    border: 2px solid #FFFFFF;
+                    border-radius: 40px;
+                }
+            }
+            .sing-up {
+                button {
+                    width: 90px;
+                    height: 36px;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    font-family: "Montserrat-400";
+                    font-size: 14px;
+                    color: #FFFFFF;
+                }
+                button:hover {
+                    border: 2px solid #FFFFFF;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+    .header-bottom {
+        text-align: center;
+        padding-bottom: 220px;
+        h1 {
+            font-family: "Montserrat-700";
+            font-size: 52px;
+            color: #FFFFFF;
+        }
+        p {
+            margin-top: 28px;
+            font-family: 'Roboto-300';
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+        button {
+            text-align: center;
+            background: #FF4E50;
+            border-radius: 40px;
+            width: 225px;
+            height: 40px;
+            margin-top: 33px;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}
