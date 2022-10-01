@@ -6,7 +6,14 @@ class Hw3_1 extends Component{
     constructor(){
         super();
 
-        this.state = {};
+        this.state = {
+            num: ``,
+        };
+    }
+
+    random =()=> {
+        this.setState({num: Math.floor(Math.random() * 10000)});
+        console.log(this.state.num);
     }
 
     render() {
@@ -15,11 +22,13 @@ class Hw3_1 extends Component{
                 <div className="box3_1">
                     <div className="box3">
                         <div className="text3">Отримане число:</div>
-                        <div className="textRandom">{}</div>
+                        <div className="textRandom">{this.state.num}</div>
                     </div>
                     <div className="block3_1">
                         <h2 className="compA">Компонент A</h2>
-                        <Hw3_2/>
+                        <Hw3_2 
+                            num={this.state.num}
+                            random={this.random}/>
                     </div>
                 </div>
             </>

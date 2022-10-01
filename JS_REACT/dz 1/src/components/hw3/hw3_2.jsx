@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Hw3_3 from "./hw3_3";
 
 class Hw3_2 extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
 
         this.state = {};
     }
@@ -13,7 +13,9 @@ class Hw3_2 extends Component{
             <>
                 <div className="block3_2">
                     <h2 className="compB">Компонент В</h2>
-                    <Hw3_3/>
+                    <Hw3_3 
+                            num={this.props.num}
+                            random={this.props.random}/>
                 </div>
             </>
         )
