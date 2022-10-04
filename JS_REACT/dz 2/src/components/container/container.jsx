@@ -9,14 +9,17 @@ const Container =()=>{
 
     const [wordBan, setWordBan] = useState([]);
     const [word, setWord] = useState('');
+    const [nameValue, setNameValue] = useState();
 
     const addWords = event =>{
         setWord(event.target.value);
+        setNameValue()
     };
 
     const addWordBtn = () => {
         setWordBan([...wordBan, word]);
         console.log(wordBan);
+        setNameValue(' ');
     };
 
     const resetWord = () =>{
@@ -50,7 +53,7 @@ const Container =()=>{
         <>
             <div className="container">
                 <Title wordBan={wordBan}/>
-                <Words addWords={addWords} addWordBtn={addWordBtn} resetWord={resetWord}/>
+                <Words addWords={addWords} addWordBtn={addWordBtn} resetWord={resetWord} nameValue={nameValue}/>
                 <TextArea addTextArea={addTextArea} ban={ban}/>
                 <CenzorBtn cenzorBtn={cenzorBtn}/>
             </div>
