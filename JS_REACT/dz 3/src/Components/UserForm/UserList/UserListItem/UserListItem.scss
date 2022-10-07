@@ -1,0 +1,23 @@
+.user-list-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title, .date, .price, .type, .sold, .id{
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .type{
+        width: 130px;
+    }
+    .sold{
+        width: 200px;
+    }
+    .id{
+        width: 80px;
+    }
+}

@@ -1,0 +1,30 @@
+.user-list{
+    width: 100%;
+
+    .nameDiv{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+
+        .nameTitle, .nameDate, .nameType, .namePrice, .nameStatus, .nameId{
+            width: 140px;
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .nameType{
+            width: 130px;
+        }
+        .nameStatus{
+            width: 200px;
+        }
+        .nameId{
+            width: 80px;
+        }
+    }
+}
+.error{
+    margin: 20px 0;
+    color: red;
+}
