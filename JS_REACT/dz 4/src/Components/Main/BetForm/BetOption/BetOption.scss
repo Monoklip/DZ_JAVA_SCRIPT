@@ -1,0 +1,26 @@
+.betOption{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    color: grey;
+
+    .optionTeam1, .optionTeam2, .optionScore1, .optionScore2, .result, .dev{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .optionScore1, .optionScore2{
+        width: 100px;
+    }
+    .dev{
+        width: 5px;
+    }
+    .result{
+        width: 395px;
+    }
+}
+.betError{
+    margin-top: 50px;
+    text-align: center;
+}

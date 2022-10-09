@@ -1,0 +1,28 @@
+.bet-option-list{
+    width: 1000px;
+    height: 30px;
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    color: brown;
+
+    .betListTeam1, .betListTeam2, .betListScore1, .betListScore2, .betListScoreNone, .betlistResult{
+        width: 200px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .betListScoreNone{
+        width: 5px;
+        color: black;
+    }
+    .betListScore1, .betListScore2{
+        width: 100px;
+        color: black;
+    }
+    .betlistResult{
+        width: 400px;
+        color: green;
+    }
+}

@@ -1,0 +1,47 @@
+.user-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input{
+        width: 140px;
+        height: 20px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 2px;
+        border: 1px solid grey;
+    }
+    .date{
+        height: 22px;
+    }
+    .select{
+        width: 130px;
+        height: 24px;
+        text-align: center;
+    }
+    .sold{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 2px;
+        .check{
+            width: 20px;
+            height: 16px;
+        }
+        span {
+            font-size: 14px;
+            margin-left: 0;
+        }
+    }
+    .btn{
+        width: 80px;
+        height: 24px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}
