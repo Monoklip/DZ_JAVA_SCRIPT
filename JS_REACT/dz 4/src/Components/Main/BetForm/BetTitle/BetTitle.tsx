@@ -14,6 +14,10 @@ const BetTitle = (props: { updateBetList: (arg0: { team1: string; team2: string;
     const [valueTeam1, setValueTeam1] = useState('');
     const [valueTeam2, setValueTeam2] = useState('');
 
+    const winner = result ? ' winner' : '';
+    const loss = result ? ' loss' : '';
+    const draw = result ? ' draw' : '';
+
     const BetTeam1 = (event: { target: { value: SetStateAction<string>; }; }) => {
         setTeam1(event.target.value);
         setValueTeam1(event.target.value);
@@ -32,7 +36,7 @@ const BetTitle = (props: { updateBetList: (arg0: { team1: string; team2: string;
             setCheck3(false);
             
             if(num1 > num2){
-                setResult('Вітаємо, ви виграли!');
+                setResult('Вітаємо, ви вгадали!');
             }
             else if(num1 < num2){
                 setResult('Нажаль ваша команда програла');
@@ -51,7 +55,7 @@ const BetTitle = (props: { updateBetList: (arg0: { team1: string; team2: string;
             setCheck3(false);
             
             if(num1 === num2){
-                setResult('Вітаємо, ви виграли!');
+                setResult('Вітаємо, ви вгадали!');
             }
             else if(num1 < num2){
                 setResult('Нажаль одна з команд перемогла');
@@ -70,7 +74,7 @@ const BetTitle = (props: { updateBetList: (arg0: { team1: string; team2: string;
             setCheck2(false);
             
             if(num1 < num2){
-                setResult('Вітаємо, ви виграли!');
+                setResult('Вітаємо, ви вгадали!');
             }
             else if(num1 > num2){
                 setResult('Нажаль ваша команда програла');
@@ -91,7 +95,7 @@ const BetTitle = (props: { updateBetList: (arg0: { team1: string; team2: string;
                     num1: num1,
                     num2: num2,
                     result: result,
-                    check1: check1,
+                    check1: check1
                 });
         
                 setNum1(Math.round(Math.random()*5));

@@ -5,11 +5,12 @@ import { Home } from "./Home/Home";
 import Footer from "../Footer/Footer";
 import TicketsForm from "./TicketsForm/TicketsForm";
 import BetForm from "./BetForm/BetForm";
+import './main.scss';
 
 const Main = () => {
 
     return(
-        <div>
+        <div className="Main">
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>

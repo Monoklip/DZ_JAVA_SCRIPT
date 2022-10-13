@@ -21,6 +21,7 @@
     }
     .sold{
         width: 200px;
+        height: 21px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,8 +32,8 @@
             height: 16px;
         }
         span {
-            font-size: 14px;
-            margin-left: 0;
+            font-size: 15px;
+            margin-left: 5px;
         }
     }
     .btn{
