@@ -1,0 +1,45 @@
+.setting-add-user{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+
+    .name, .password, .email, .edit, .delete{
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .password{
+        width: 23%;
+    }
+    .email{
+        width: 38%;
+    }
+    .edit{
+        width: 12%;
+        height: 20px;
+        background: orange;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        
+        &:hover {
+            background: rgb(189, 123, 2);
+        }
+    }
+    .delete{
+        width: 10%;
+        height: 20px;
+        background: red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        
+        &:hover {
+            background: rgb(128, 2, 2);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.task-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+    .titleNum{
+        width: 2%;
+    }
+    .titleName, .titleCheck, .titleDone{
+        text-align: center;
+        width: 18%;
+    }
+    .titleName{
+        text-align: left;
+    }
+    .titleBtn{
+        width: 18%;
+        text-align: center;
+    }
+}

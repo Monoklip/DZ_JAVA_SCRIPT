@@ -1,0 +1,81 @@
+.worksMenu{
+    width: 1440px;
+    height: 50px;
+    display: flex;
+
+    .lastWorks{
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid grey;
+        font-size: 20px;
+
+    }
+    .cenzorWorks{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid grey;
+
+        a{
+            color:rgb(0, 155, 252);
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+    .userListWorks{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid grey;
+
+        a{
+            color:rgb(0, 155, 252);
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+    .taskListWorks{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid grey;
+
+        a{
+            color:rgb(0, 155, 252);
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+    .backHome{
+        width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid grey;
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: brown;
+        }
+    }
+    .pustota{
+        width: 700px;
+        border-bottom: 1px solid grey;  
+    }
+}
+
+.btn1{
+    &:active{
+        background: yellow;
+    }
+}
