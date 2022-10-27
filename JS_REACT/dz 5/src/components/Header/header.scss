@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 1440px;
+    height: 200px;
+    background: rgb(220, 228, 114);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .logo{
+        height: 100%;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .header-title{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: brown;
+            text-decoration: underline wavy green;
+        }
+    }
+
+    .logo2{
+        height: 100%;
+
+        img{
+            height: 100%;
+            transform: scaleX(-1);
+        }
+    }
+}

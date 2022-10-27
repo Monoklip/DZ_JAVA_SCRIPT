@@ -1,0 +1,57 @@
+.task-item{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    .task-name{
+        width: 320px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .task-input{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+    .task-done{
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .task-btn-edit{
+        width: 100px;
+        margin: 0 auto;
+        background: orange;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(110, 72, 1);
+        }
+    }
+    .task-btn-delete{
+        width: 100px;
+        margin: 0 auto;
+        background: red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(134, 2, 2);
+        }
+        &:disabled{
+            background: grey;
+            cursor: auto;
+        }
+    }
+}

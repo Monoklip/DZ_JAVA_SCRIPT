@@ -1,0 +1,38 @@
+.task-title{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .input{
+        width: 75%;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-size: 20px;
+
+        &:focus{
+            outline: none;
+            border: 1px solid blue;
+            box-shadow: 0 0 5px 0 blue;
+            color: brown;
+        }
+    }
+    .btn{
+        width: 20%;
+        height: 30px;
+        background: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(0, 78, 0);
+        }
+    }
+}
