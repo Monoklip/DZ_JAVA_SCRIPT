@@ -10,6 +10,7 @@
         margin: 0 auto;
         padding: 0 20px;
         box-sizing: border-box;
+        color: brown;
     }
     .task-input{
         width: 200px;
@@ -17,7 +18,6 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-
     }
     .task-done{
         width: 200px;
@@ -34,7 +34,7 @@
         cursor: pointer;
 
         &:hover{
-            background: rgb(110, 72, 1);
+            background: rgb(136, 88, 0);
         }
     }
     .task-btn-delete{
@@ -52,6 +52,55 @@
         &:disabled{
             background: grey;
             cursor: auto;
+        }
+    }
+}
+.edit-box{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+
+    .edit-input{
+        width: 200px;
+        height: 20px;
+        margin-left: 30px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        text-align: center;
+        color: blue;
+
+        &:focus{
+            outline: none;
+            border: 1px solid blue;
+            box-shadow: 0 0 5px 0 blue;
+        }
+    }
+    .edit-btn-rename{
+        width: 100px;
+        height: 20px;
+        border: none;
+        border-radius: 5px;
+        background: green;
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(0, 83, 0);
+        }
+    }
+    .edit-btn-close{
+        width: 50px;
+        height: 20px;
+        border: none;
+        border-radius: 5px;
+        background: red;
+        color: white;
+        margin-left: 5px;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(145, 0, 0);
         }
     }
 }

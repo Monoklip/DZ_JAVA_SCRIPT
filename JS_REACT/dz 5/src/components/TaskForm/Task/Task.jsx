@@ -16,7 +16,7 @@ const Task = (props) => {
                 </div>
                 <ol type='1' className='ol'>
                     {props.tasks.map(task => {
-                    return < TaskItem task={task} />
+                    return < TaskItem task={task}/>
                 })}
                 </ol>
             </div>
