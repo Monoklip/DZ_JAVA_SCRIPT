@@ -21,19 +21,23 @@ const TaskItem = (props) => {
 
             setEditBox(false);
 
-            const edit = JSON.parse(localStorage.getItem('Task'));
-            console.log(edit);
+            let editTaskName = JSON.parse(localStorage.getItem('Task'));
 
-            const editTask = (item) => {
-                if(item.task !== `${props.task.task}`){
-                    return true;
-                }
-            };
+            editTaskName = editTaskName.map(element =>{
 
-            const newEdit = edit.filter(editTask);
-            localStorage.setItem('Task', JSON.stringify([...newEdit, {task: `${inpEditName}`}]));
+                // if(element.taskName === props.task.taskName){
+                //     return element.taskName = {taskName: `${inpEditName}`};
+                // }
+                // else{
+                //     return element;
+                // }
 
-            props.task.task = `${inpEditName}`;
+                return element.taskName === props.task.taskName ? {taskName: `${inpEditName}`} : element;
+            });
+
+            localStorage.setItem('Task', JSON.stringify(editTaskName));
+
+            props.setTask(editTaskName);
         }
         else{
             alert('Неможна залишати поле пустим!');
@@ -64,7 +68,7 @@ const TaskItem = (props) => {
         const deleteTask = JSON.parse(localStorage.getItem('Task'));
 
         const filterTask = (item) => {
-            if(item.task !== `${props.task.task}`){
+            if(item.taskName !== props.task.taskName){
                 return true;
             }
         };
@@ -72,6 +76,7 @@ const TaskItem = (props) => {
         const newDeleteTask = deleteTask.filter(filterTask);
 
         localStorage.setItem('Task', JSON.stringify(newDeleteTask));
+
         setDisplay(false);
         setEditBox(false);
     };
@@ -85,7 +90,7 @@ const TaskItem = (props) => {
             {display && (
                 <div className="task-item">
                     <li></li>
-                    <div className="task-name">{props.task.task}</div>
+                    <div className="task-name">{props.task.taskName}</div>
                     <input className="task-input" type="checkbox" checked={check} onChange={handleCheckChenge}/>
                     <div className="task-done" style={{color:`${color}`}}>{done}</div>
                     <button className="task-btn-edit" onClick={edit}>Edit</button>

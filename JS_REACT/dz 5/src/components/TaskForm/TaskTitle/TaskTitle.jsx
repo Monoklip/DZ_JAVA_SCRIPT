@@ -3,7 +3,7 @@ import './task-title.scss';
 
 const TaskTitle = (props) => {
 
-    const [task, setTaskInput] = useState('');
+    const [taskName, setTaskInput] = useState('');
     const [value, setValue] = useState('');
     
     const handleTaskChenge = (event) => {
@@ -12,9 +12,9 @@ const TaskTitle = (props) => {
     };
 
     const createBtn = () => {
-        if(task.trim() !== ''){
+        if(taskName.trim() !== ''){
             props.uptadeTaskList({
-                task: task.trim()
+                taskName: taskName.trim()
             });
         
             setValue('');

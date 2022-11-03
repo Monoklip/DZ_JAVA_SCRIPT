@@ -16,7 +16,7 @@ const TaskForm = () => {
     return(
         <div className="task-form">
             <TaskTitle uptadeTaskList={uptadeTaskList}/>
-            <Task tasks={tasks} />
+            <Task tasks={tasks} setTask={setTask}/>
         </div>
     )
 };
