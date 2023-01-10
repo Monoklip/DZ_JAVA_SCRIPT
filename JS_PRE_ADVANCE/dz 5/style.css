@@ -1,0 +1,147 @@
+body{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.search{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seachBtn{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(0, 177, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    height: 90%;
+    font-size: 20px;
+    padding:  0 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 3px 2px rgb(54, 118, 255);
+}
+.movies{
+    width: 90%;
+    margin: 10px auto;
+}
+.films{
+    width: 20%;
+    border: 1px solid rgb(199, 199, 199);
+    float: left;
+    margin: 10px 30px;
+}
+.image{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+.nameMovie{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 178, 178);
+    font-size: 20px;
+}
+.typeMovie, .yearMovie{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnMovieDetails{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(49, 165, 49);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+}
+.movieInfo{
+    width: 90%;
+    height: 600px;
+    border: 1px solid grey;
+    margin: 10px auto;
+    transform: scale(1);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    display: none;
+}
+.movieInfo2{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 210, 210);
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoImage{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+.infotext{
+    width: 69%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+.infoText-title{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(180, 177, 177);
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoText-info{
+    width: 100%;
+    height: 90%;
+    color: rgb(44, 43, 43);
+}
+.Rated{
+    font-size: 12px;
+    color: grey;
+}
+.close{
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    background-color: red;
+}
