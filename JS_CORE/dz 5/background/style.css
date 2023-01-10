@@ -1,0 +1,27 @@
+.box-color{
+    width: 306px;
+    height: 306px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    display: none;
+}
+.colors{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid;
+}
+.box-image{
+    width: 460px;
+    margin: 0 auto;
+    display: none;
+}
+.images{
+    width: 150px;
+    height: 80px;
+    float: left;
+    background-size: cover;
+}
+div img{
+    width: 100%;
+}
