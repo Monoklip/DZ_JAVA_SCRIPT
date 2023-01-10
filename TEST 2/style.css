@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuUnLock{
+    width: 700px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.menuLock{
+    width: 700px;
+    height: 1px;
+    position: fixed;
+
+}
+.menu-bar1{
+    width: 40px;
+    height: 40px;
+}
+.menu-bar2{
+    width: 172px;
+    height: 40px;
+}
+.menu-bar3{
+    width: 128px;
+    height: 40px;
+}
+.menu-bar4{
+    width: 172px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar5{
+    width: 40px;
+    height: 40px;
+}
+.editBtn , .bBtn , .iBtn , .uBtn , .sBtn , .textLeft , .textCenter , .textRight , .backgroundColorBtn , .backgtoundImageBtn , .lockBtn , .unLockBtn , #fontSize, #fontFamily{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+}
+#fontFamily {
+    background: url(./image/A.png) no-repeat;
+    background-size: 18px;
+    background-position: 5px;
+    background-color: white;
+}
+#fontSize {
+    background: url(./image/T.png) no-repeat;
+    background-size: 20px;
+    background-position: 5px;
+    background-color: white;
+}
+.backgroundColorBtn img, .backgtoundImageBtn img, .lockBtn img, .textLeft img, .textCenter img ,.textRight img, .unLockBtn img {
+    height: 100%;
+}
+.unLockBtn{
+    display: none;
+}
+.editBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fontFamily, #fontSize{
+    font-size:20px;
+}
+textarea{
+    min-width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+    font-weight: normal;
+    display: none;
+    border: none;
+    padding: 20px;
+}
+.text{
+    font-weight: normal;
+}
+.menuTextColor{
+    width: 500px;
+    height: 270px;
+    background-color: rgb(236, 234, 234);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: none;
+    margin: 100px auto;
+    transform: scale(1);
+}
+.menuTextColorUp{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuTextColorUpBtn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+.menuTextColorUpBtn img{
+    height: 100%;
+}
+.menuTextColorDown{
+    width: 100%;
+    height: 80%;
+}
+.color-line{
+    width: 480px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.color{
+    width: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text-monitor{
+    width: 100%;
+    min-height: 700px;
+    box-sizing: border-box; 
+    padding: 20px;
+}
+.menuBackgroundColor{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: rgb(236, 234, 234);
+    transform: scale(1);
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.menuBackgroundColorText{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-image: url;
+}
+.menuBackgroundColorSeting{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.mbcBtn, .mbiBtn, .mbfBtn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(236, 234, 234);
+    color: rgb(0, 102, 255);
+    font-size: 18px;
+}
+.mbcBtn{
+    border: 1px solid grey;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0 5px 0 0 ;
+    color: grey;
+}
+.mbiBtn, .mbfBtn{
+    border-bottom: 1px solid grey;
+}
+.hz{
+    width: 15%;
+    height: 100%;
+}
+.hz2{
+    width: 55%;
+    height: 100%;
+}
+.hz2Btn{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: rgb(236, 234, 234);
+}
+.menuBackgroundBtn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: rgb(236, 234, 234);
+    cursor: pointer;
+
+}
+.menuBackgroundBtn img{
+    height: 100%;
+}
+.menubackgroundColorSetingBox{
+    width: 100%;
+    height: 75%;
+}
+.background-line{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.background{
+    width: 13%;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+};
+.menuBackgroundColorSetingBoxColors{
+    display: none;
+}
+.menuBackgroundColorSetingBoxImages{
+    width: 100%;
+    height: 100%;
+}
+.background-line-image{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3px 20px;
+}
+.background-image {
+    width: 30%;
+    height: 100%;
+}
+.background-image img {
+    width: 100%;
+}
+.menuBackgroundColorSetingBoxImages, .menuBackgroundColorSetingBoxFiles, .menuBackgroundColor{
+    display: none;
+}
+.menuBackgroundColorSetingBoxFiles{
+    width: 50%;
+    margin: 100px auto;
+}
+.file{
+    border: red;
+}
+.account{
+    width: 500px;
+    height: 250px;
+    margin: 100px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    transform: scale(1);
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: none;
+}
+.account-text{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#form{
+    width: 100%;
+}
+#form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+}
+#inputBtn{
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#inputBtn:hover{
+    background-color: rgb(87, 86, 86);
+}
+#inputName:focus {
+    border: 1px solid red;
+}
+.imgBtnLock{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.imgBtnUnLock{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.account-tex-close{
+    width:20px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.account-tex-close img{
+    height: 100%;
+}
+.menuEditBar{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    display: none;
+}
+.menuEditBarBtn1, .menuEditBarBtn2, .menuEditBarBtn3, .menuEditBarBtn4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.menuEditBarBtn1 img, .menuEditBarBtn2 img , .menuEditBarBtn3 img, .menuEditBarBtn4 img{
+    height: 100%;
+}
+.govBtn {
+    width: 700px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.table{
+    width: 700px;
+    height: 370px;
+    background-color: white;
+    transform: scale(1);
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: none;
+    margin: 100px auto;
+}
+.tabletext{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.tableBtnClose{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.tableBtnClose img{
+    height: 100%;
+}
+.tableSeting{
+    display: flex;
+}
+.tableSetingLeft, .tableSetingRight{
+    width: 50%;
+    height: 100%;
+}
+.tableLine{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.tableLine input, #selectStyle, #selectColor{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-family: monospace;
+}
+.tableLine p, .tableLine3 p{
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 16px;
+}
+.tableLine2{
+    display: flex;
+}
+.tableLine3{
+    width: 50%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-weight: normal;
+}
+.tableBtnCreate{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(16, 129, 16);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tableBtnReset{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: rgb(235, 59, 59);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.li, .ol{
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    border: 1px solid grey;
+    background-color: white;
+    transform: scale(1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: none;
+}
+.liText, .olText{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liBtnClose, .olBtnClose{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+.liBtnClose img, .olBtnClose img{
+    height: 100%;
+}
+.liSeting, .liBtn ,.olSeting, .olBtn{
+    width: 100%;
+    height: 80px;
+    font-family: monospace;
+}
+.liSeting p, .olSeting p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.liSeting input, #liCountType, .olSeting input, #olCountType{
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-family: monospace;
+}
+.liBtn, .olBtn{
+    display: flex;
+    justify-content: space-between;
+}
+.liBtnReset, .liBtnCreate, .olBtnReset, .olBtnCreate{
+    width: 48%;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.liBtnReset, .olBtnReset{
+    background-color: rgb(235, 59, 59);
+}
+.liBtnCreate, .olBtnCreate{
+    background-color: rgb(16, 129, 16);
+}
+.out{
+    width: 400px;
+    height: 70px;
+    margin: 100px auto;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+    transform: scale(1);
+    border-radius: 10px;
+    display: none;
+}
+.out-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.out-menu button{
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.cancelBtn{
+    background-color: rgb(36, 34, 34);
+}
+.singOutBtn{
+    background-color: rgb(202, 57, 57);
+}
+.accound-invalid{
+    width: 100%;
+    height: 20px;
+    color: red;
+}
+#fontFamily img{
+    width: 100%;
+}
+.spanName, .spanPassword{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: -30px;
+}
