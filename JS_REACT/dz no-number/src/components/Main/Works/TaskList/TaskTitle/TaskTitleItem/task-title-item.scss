@@ -1,0 +1,57 @@
+.task-title-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    li{
+        margin: 0 0 0 15px;
+    }
+    
+    .titleItemName, .titleItemCheck, .titelItemDone{
+        text-align: center;
+        width: 18%;
+    }
+    .titleItemName{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .titleItemBtn{
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .titleItemBtnEdit{
+            width: 80px;
+            height: 20px;
+            border: none;
+            border-radius: 5px;
+            background: orange;
+            cursor: pointer;
+
+            &:hover{
+                background: rgb(179, 116, 0);
+            }
+        }
+        .titleItemBtnDelete{
+            width: 80px;
+            height: 20px;
+            border: none;
+            border-radius: 5px;
+            background: red;
+            color: white;
+            cursor: pointer;
+
+            &:hover{
+                background: rgb(117, 0, 0);
+            }
+
+            &:disabled{
+                background: rgb(255, 147, 147);
+                cursor: auto;
+            }
+        }
+    }
+}
