@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f7b06a5301.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <form action="" id="form">
+            <div class="h1">
+                <h1>Please sing up</h1>
+            </div>
+            <div class="input">
+                <input required type="text" name="first" class="first-name" placeholder="First name" onkeyup="validateFirstName()">
+                <span class="span"></span>
+            </div>
+            <div class="input">
+                <input required type="text" name="last" class="last-name" placeholder="Last name" onkeyup="validateLastName()">
+                <span class="span2"></span>
+            </div>
+            <div class="input">
+                <input required type="email" name="email" class="email" placeholder="Email address" onkeyup="validateEmail()">
+                <span class="span3"></span>
+            </div>
+            <div class="input">
+                <input required type="password" name="password" class="password" placeholder="Password" onkeyup="validatePassword()">
+                <span class="span4"></span>
+            </div>
+            <div class="input">
+                <div class="box">
+                    <input required type="checkbox" name="policy" class="checkbox">I agree with Privacy Policy
+                </div>
+            </div>
+            <div class="input">
+                <input type="submit" value="Sing Up" class="btn" disabled>
+            </div>
+        </form>
+    </header>
+
+    <div id="okno">
+        <div class="alert-green">
+            <img src="https://static5.depositphotos.com/1029663/414/i/450/depositphotos_4141227-stock-photo-ok-approved.jpg" alt="">
+        </div>
+        <div class="alert-text">
+            <div class="up">
+                <h2>Excellent!</h2>
+            </div>
+            <div class="down">
+                <button class="alert-button">Start Exploring 🠊</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
